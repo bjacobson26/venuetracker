@@ -6,7 +6,7 @@ class Venue < ActiveRecord::Base
 	
 
 	# gets venue data from songkick API 
-	def self.save_data_from_api
+	def save_data_from_api
 		response = HTTParty.get("http://api.songkick.com/api/3.0/search/venues.json?query=los%20angeles&apikey=#{ENV['SK_API_KEY']}")
 			response_json = JSON.parse(response.to_json)
 			venues = response_json["resultsPage"]["results"]["venue"]
