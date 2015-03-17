@@ -1,2 +1,4 @@
 #ignore application.yml
 /config/application.yml
+
+/config/secrets.yml
