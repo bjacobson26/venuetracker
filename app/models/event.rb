@@ -3,7 +3,7 @@ class Event < ActiveRecord::Base
 
 
 
-	def events_api
+	def self.events_api
 		#make empty array
 		id_array = []
 		
