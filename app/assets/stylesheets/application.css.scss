@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require parsley
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import 'bootstrap';
+
+$mainfont: 'Abel', sans-serif;
+
+div#searchbar {
+  text-align: center;
+  margin: 2%;
+}
+
+input#searchbutton {
+  background-color: transparent;
+  color: white;
+  border-color: #F80046;
+  border-radius: 5px;
+}
+input#searchbutton:hover {
+  background-color: black;
+  color: #F80046;
+  border-color: #F80046;
+  border-radius: 5px;
+}
+
+input#venues {
+  background-color: transparent;
+  color: #F80046;
+  font-family: $mainfont;
+  border-radius: 7px;
+  height: 44px;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+
+
+h1, h2 {
+	font-family: $mainfont;
+	color:white;
+}
+
+
+.btn-primary {
+color: #F80046;
+border-color: black;
+font-family: $mainfont;
+background-color: #222222;
+margin-left: 80%;
+}
+a {
+	color:#F80046;
+}
+
+
+.websiteURL {
+	color:#F80046;
+}
+.websiteURL:hover {
+	color:white;
+}
+
+
+ #logo {
+ 	border: 0;
+height: 196%;
+margin-top: -24%;
+ }
+
+#nameLogo {
+ border: 0;
+width: 123px;
+margin-top: 8.5px;
+ }
+
+ .button {
+ 	background:none;
+ }
+ 

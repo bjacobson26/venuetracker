@@ -1,0 +1,62 @@
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+<%= render 'nav' %>
+ <div class="container">
+  <%= render 'yourVenues' %>
+
+   <div id="searchbar" class="ui-widget">
+   <%= form_tag venues_path, :method => :get do %>
+       <%= text_field_tag :search, params[:search], :id=>"venues" %>
+       <%= submit_tag "Search", :name => nil, :id=>"searchbutton" %>
+   <% end %>
+     </div>
+
+   <script>
+    // make sure our code runs after the page is fully rendered
+     $(function(){
+         // grab venues from json
+         $.get("/venues.json", function(venues){
+             // set up autocomplete
+             $( "#venues" ).autocomplete({
+                 // have the source filter by venues
+                 source: venues
+             });
+         });
+
+     });
+
+   </script>
+
+ 
+		<div id="searchVenues">
+			<h1 class="titles">Los Angeles Venues</h1>
+			<table class="table" data-cache="false" data-height="299">
+			    <thead>
+			        <tr id="tableHeaders">
+			            <th data-field="venue">Venue</th>
+			            <th data-field="name">City</th>
+			            <th data-field="address">Address</th>
+			            <th data-field="phone">Phone</th>
+			            <th data-field="website">Website</th>
+			            <th data-field="event">Event Calender</th>
+			            <th data-field="">Add Venue</th>
+			        </tr>
+			        <% @venues.each do |venue|%>
+			        <tr>
+			        		<td><%= venue.name %></td>
+			        		<td><%= venue.city %></td>
+			        		<td><%= venue.address %></td>
+			        		<td><%= venue.phone %></td>
+			        		<td><a class="websiteURL" href="<%= venue.website %>" target="_blank"><%= venue.website %></td>
+			        		<td id="events" class="button"><%= link_to "Events", venue_path(venue.id), :class => "eventsButtonV"%></td>
+			        		<td id="favorite" class="button"><%= button_to "Add to Favorites", user_venues_path(venue_id: venue.id), :class => "addFavs"%></td>
+			        </tr>
+			        <% end %>
+			    </thead>
+			</table>
+		</div>
+	</div>
+	
+

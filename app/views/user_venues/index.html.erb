@@ -1,0 +1,33 @@
+  <%= render 'nav' %>
+  <div class="container">
+	  <%= render 'add' %>
+
+	  <div id="myVenues">
+			<h1 class="titles"><%= session["user_name"] %>'s Favorite Venues (<%= current_user.venues.count%>)</h1>
+			<table class="table" data-cache="false" data-height="299">
+			    <thead>
+			        <tr>
+			            <th data-field="venue">Venue</th>
+			            <th data-field="name">City</th>
+			            <th data-field="address">Address</th>
+			            <th data-field="phone">Phone</th>
+			            <th data-field="website">Website</th>
+			            <th data-field="event">Event Calender</th>
+			            <th data-field="">Remove Venue</th>
+			        </tr>
+			        
+			        	<% current_user.user_venues.each do |uv| %>
+			        	<tr><td><%= uv.venue != nil ? uv.venue.name : "" %></td>
+			        	<td><%= uv.venue != nil ? uv.venue.city : "" %></td>
+			        		<td><%= uv.venue != nil ? uv.venue.address : "" %></td>
+			        		<td><%= uv.venue != nil ? uv.venue.phone : "" %></td>
+			        		<td><a class="websiteURL" href="<%=uv.venue.website %>"><%= uv.venue != nil ? uv.venue.website : "" %></a></td>
+			        				<td class="button"><%= link_to "Events", venue_path(uv.venue.id), :class => "eventsButton"%></td>
+										<td><%= button_to "Remove", user_venue_path(uv.id), method: :delete , :class=> "removeButton" %></td><!-- overrides button default "post" method to "delete"-->
+			        	</tr>
+				        <% end %>
+			    </thead>
+			</table>
+		</div>
+	</div>
+

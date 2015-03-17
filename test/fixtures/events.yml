@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2015-02-16
+  time: 2015-02-16 13:19:21
+  datetime: 2015-02-16 13:19:21
+  artist: MyString
+  uri: MyString
+
+two:
+  name: MyString
+  date: 2015-02-16
+  time: 2015-02-16 13:19:21
+  datetime: 2015-02-16 13:19:21
+  artist: MyString
+  uri: MyString

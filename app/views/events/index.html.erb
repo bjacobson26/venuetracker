@@ -1,0 +1,27 @@
+  <%= render 'nav' %>
+  <div class="container">
+  <%= render 'yourVenues' %>
+  
+
+  <div id="EventsTable">
+		<h1 class="titles">Los Angeles Concerts</h1>
+		<table class="table" data-cache="false" data-height="299">
+		    <thead>
+		        <tr>
+		            <th data-field="name">Name</th>
+		            <th data-field="date">Date</th>
+		            <th data-field="website">Buy Tickets</th>
+		        </tr>
+		        	
+		        	<% @events.each do |ev| %>
+		        	<tr><td><%= ev.name != nil ? ev.name : "" %></td>
+		        	<td><%= ev.date != nil ? ev.date : "" %></td>
+		        		
+		        		<td><a href="<%= ev.uri %>" target="_blank">Buy tickets!</a></td>
+		        	</tr>
+			        <% end %>
+		    </thead>
+		</table>
+	</div>
+	</div>
+

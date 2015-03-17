@@ -1,0 +1,140 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$mainfont: 'Abel', sans-serif;
+#top {
+	color:white;
+	margin-top:10%;
+}
+
+.changePassword {
+	text-align:center;
+	padding-bottom:5px;
+}
+.PW {
+	font-family: $mainfont;
+border-radius: 7px;
+text-align: center;
+margin-top: 3px;
+}
+.update{
+	background-color: black;
+	color:#F80046;
+	border-color:#F80046;
+	border-radius: 3px;
+}
+.update:hover{
+	background-color: #F80046;
+	color:white;
+	border-color:white;
+	border-radius: 3px;
+}
+
+#signUp {
+border: 10px solid #F80046;
+width: 350px;
+height: 350px;
+margin: auto;
+text-align: center;
+font-family: $mainfont;
+border-radius: 50%;
+margin-top: 2%;
+}
+
+.create {
+	background-color: #F80046;
+	color:white;
+	border-color:white;
+	border-radius: 3px;
+}
+
+.create:hover {
+	background-color:black;
+	color: #F80046;
+	border-color:#F80046;
+}
+
+
+
+
+
+a.eventsButton {
+	display: block;
+border: 2px solid #F80046;
+text-align: center;
+width: 60px;
+height: 24px;
+padding-bottom: 2px;
+background-color: black;
+border-radius: 3px;
+margin-left: 12px;
+margin-top: 5px;
+}
+a.eventsButton:hover {
+border: 2px solid white;
+background-color: #F80046;
+text-decoration:none;
+color:white;
+
+}
+
+input.removeButton {
+	display: block;
+	height:25px;
+	text-align:center;
+	width:66px;
+background-color: transparent;
+color: white;
+border-radius: 3px;
+border-color: #F80046;
+margin-left: 17px;
+margin-top: 4px;
+margin-right: 17px;
+}
+
+input.removeButton:hover {
+background-color: black;
+color: #F80046;
+border-color:#F80046;
+}
+
+
+
+.addVenues {
+	color: #F80046;
+	display:block;
+width: 160px;
+border-radius: 17px;
+padding: 13px 31px 15px 32px;
+font-family: $mainfont;
+background-color: black;
+font-size: 19px;
+margin: 0 auto;
+text-align: center;
+text-decoration: none;
+border: 2px solid #F80046;
+}
+
+
+.addVenues:hover {
+border: 2px solid white;
+color: white;
+text-decoration:none;
+background-color:#F80046;
+}
+
+
+
+#awesome {
+	background-color:black;
+	color: #F80046;
+	font-family:$mainfont;
+}
+
+.titles {
+	text-align:center;
+}
+
+.table {
+	margin: auto;
+}

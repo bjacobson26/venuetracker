@@ -1,0 +1,21 @@
+<h1 id="headertag">A web application that allows you to keep track of what's going on at all your favorite venues!</h1>
+
+<div id="signUp">
+	<h1 id="top">Sign up!</h1>
+	<!-- always use f for form_for -->
+	<%= form_for @user, :html => {'parsley-validate' => ''}  do |f| %>
+		<%= f.text_field :name, :required => true, :placeholder => "Name",  :class => "PW" %><br />
+		<%= f.text_field :email, :required => true, :placeholder => "Email", :class => "PW" %><br />
+		<%= f.password_field :password, :required => true, :placeholder => "Password", :class => "PW" %><br />
+		<%= f.password_field :password_confirmation, :required => true, :placeholder => "Confirm Password", :class => "PW" %><br />
+		<%= f.text_field :city, :required => true, :placeholder => "City", :class => "PW" %><br /><br/>
+		<%= f.submit "Create Account!", :class => "create" %>
+	<% end %>
+</div>
+
+<h2 id="h2">Powered by the <a href="http://songkick.com"><img id="skNameLog" src="../assets/skNameLogo.png"></a> API</h2>
+
+
+<h3 id="tag">Created by Bo Jacobson 2015</h3>
+
+

@@ -1,0 +1,32 @@
+<%= render 'nav' %>
+<div class="container">
+<%= render 'yourVenues' %>
+ <div id="EventsTable">
+		<h1 class="titles">Events at <%= @venue.name %></h1>
+		<table class="table" data-cache="false" data-height="299">
+		    <thead>
+		        <tr>
+		            <th data-field="name">Concert</th>
+		            <th data-field="date">Date</th>
+		            <th data-field="website">Buy Tickets</th>
+		        </tr>
+
+		        <% current_id = @venue.ext_id %>
+		        <% @event.each do |ev| %>
+		        	<% if ev.ext_id == current_id %>
+		        		<tr><td><%= ev.name %></td>
+		        		<td><%= ev.date %></td>
+		        		
+		        		<td><a class="websiteURL" href="<%= ev.uri %>" target="_blank">Buy tickets!</a></td>
+
+		        	</tr>
+		        	<% end %>
+			        <% end %>
+			        </thead>
+		</table>
+	</div>
+</div>
+
+
+		        	 
+		        

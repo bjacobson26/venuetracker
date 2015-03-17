@@ -1,0 +1,17 @@
+<h1 id="headertag">A web application that allows you to keep track of what's going on at all your favorite venues!</h1>
+
+<div id="logIn">
+	<h1 id="top1">Los Angeles<br>Venue Tracker</h1>
+	<!-- always use f for form_for -->
+	<%= form_for @user, :url => { :controller => "sessions", :action => "create" } do |f| %>
+		<%= f.text_field :email, :placeholder => "Email", :class => 'PW' %><br />
+		<%= f.password_field :password, :placeholder => "Password", :class => 'PW' %><br /><br />
+		<%= f.submit " Log in!  ", :class => "login"%><br/><br/>
+		<a href="../users/new"><button id="signup">Sign up!</button></a>
+		</div>
+		<% end %>
+</div>
+
+<h2 id="h2">Powered by the <a href="http://songkick.com"><img id="skNameLog" src="../assets/skNameLogo.png"></a> API</h2>
+
+<h3 id="tag">Created by Bo Jacobson 2015</h3>

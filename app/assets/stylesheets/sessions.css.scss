@@ -1,0 +1,78 @@
+
+
+
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$mainfont: 'Abel', sans-serif;
+
+#top1 {
+	margin-top:16%;
+	color:white;
+}
+
+#headertag {
+	text-align:center;
+	font-family:$mainfont;
+	font-size: 25px;
+	color:white;
+
+}
+
+
+	#logIn {
+		color: #1E2126;
+border: 10px solid #F80046;
+width: 350px;
+height: 350px;
+margin: auto;
+text-align: center;
+font-family: $mainfont;
+border-radius: 50%;
+margin-top: 2%;
+}
+
+#signup {
+	font-family: $mainfont;
+	color:white;
+	background-color:#F80046;
+	border-color:white;
+	border-radius: 2px;
+}
+#signup:hover {
+	font-family: $mainfont;
+	color:#F80046;
+	background-color:black;
+	border-color:#F80046;
+	border-radius: 2px;
+}
+
+.login {
+	font-family: $mainfont;
+	color:white;
+	background-color:rgba(0, 0, 0, 0.35);
+	border-color:#F80046;
+	border-radius: 2px;
+}
+.login:hover {
+	color: #F80046;
+	background-color:black;
+}
+
+#skNameLog {
+	width:15%;
+}
+#h2 {
+	text-align:center;
+	font-family:$mainfont;
+	color:white;
+}
+
+#tag {
+	text-align:center;
+	color:white;
+	font-size:15px;
+	font-family:$mainfont;
+}
+
+

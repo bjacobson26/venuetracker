@@ -1,0 +1,111 @@
+// Place all the styles related to the venues controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$mainfont: 'Abel', sans-serif;
+
+body {
+
+	background-image: url('downtownLA.jpg');
+ .container {
+ background-color: rgba(0, 0, 0, 0.58);
+ padding-top:20px;
+ margin-top:-20px;
+ width:100%;
+ border-radius:3px;
+ }	
+
+.table {
+width: 50%;
+min-width: 50%;
+margin-bottom: 20px;
+font-family: $mainfont;
+width: 100%;
+color:white;
+}
+
+.addFavs {
+border: 2px solid #F80046;
+background-color: black;
+color: #F80046;
+margin-top: -9px;
+border-radius: 7px;
+display: block;
+}
+.addFavs:hover {
+border: 2px solid white;
+background-color: #F80046;
+color: white;
+margin-top: -9px;
+border-radius: 7px;
+display: block;
+}
+a.eventsButtonV {
+	display: block;
+margin-top: 7px;
+border: 2px solid #F80046;
+text-align: center;
+width: 60px;
+height: 24px;
+padding-bottom: 2px;
+background-color: black;
+border-radius: 3px;
+margin-left: -4%;
+}
+a.eventsButtonV:hover {
+	display: block;
+margin-top: 7px;
+border: 2px solid white;
+text-align: center;
+width: 60px;
+height: 24px;
+padding-bottom: 2px;
+background-color: #F80046;
+text-decoration:none;
+color:white;
+border-radius:3px;
+margin-left: -4%;
+}
+
+
+.yourVenues {
+	color: #F80046;
+display: block;
+width: 150px;
+border-radius: 17px;
+padding: 13px 31px 15px 32px;
+font-family: $mainfont;
+background-color: black;
+font-size: 19px;
+margin: 0 auto;
+text-align: center;
+text-decoration: none;
+border: 2px solid #F80046;
+}
+.yourVenues:hover {
+border: 2px solid white;
+color: white;
+text-decoration:none;
+background-color:#F80046;
+}
+
+.titles {
+	font-family: $mainfont;
+	color:white;
+}
+
+.button{
+	color: #F80046;
+}
+
+#logout {
+	text-decoration:none;
+}
+
+}
+#eventButton {
+	margin-top: 18%;
+}
+
+#favorite{
+	padding-top: 1.5%;
+}
