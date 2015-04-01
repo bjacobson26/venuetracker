@@ -7,7 +7,7 @@ class VenuesController < ApplicationController
     if params[:search].present?
       @venues = Venue.where("name ilike ?", "%#{params[:search]}%")
     else
-      @venues = Venue.all
+      @venues = Venue.all - current_user.venues
     end
 
     respond_to do |format|
