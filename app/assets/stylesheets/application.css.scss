@@ -25,6 +25,7 @@ div#searchbar {
   margin: 2%;
 }
 
+
 input#searchbutton {
   background-color: transparent;
   color: white;
@@ -50,7 +51,35 @@ input#venues {
   margin: auto;
   margin-bottom: 10px;
 }
+input#events {
+  background-color: transparent;
+  color: #F80046;
+  font-family: $mainfont;
+  border-radius: 7px;
+  height: 44px;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
+body a.eventsButtonV {
+    display: block;
+  border: 2px solid #F80046;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 6px;
+}
+body a.eventsButtonV:hover {
+  color: white;
+  text-decoration: none;
+}
 
 
 h1, h2 {
@@ -70,6 +99,22 @@ a {
 	color:#F80046;
 }
 
+a.buytix {
+
+}
+a.buytix:hover {
+  color:white;
+  text-decoration: none;
+}
+
+
+.navbar-inverse {
+  background-color: #222222;
+  border-color: #090909;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
 
 .websiteURL {
 	color:#F80046;
@@ -78,6 +123,9 @@ a {
 	color:white;
 }
 
+td {
+  font-size: 19px;
+}
 
  #logo {
  	border: 0;

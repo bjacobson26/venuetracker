@@ -1,4 +1,8 @@
   <%= render 'nav' %>
+  <br>
+  <br>
+  <br>
+  <br>
   <div class="container">
 	  <%= render 'add' %>
 
@@ -22,7 +26,7 @@
 			        		<td><%= uv.venue != nil ? uv.venue.address : "" %></td>
 			        		<td><%= uv.venue != nil ? uv.venue.phone : "" %></td>
 			        		<td><a class="websiteURL" href="<%=uv.venue.website %>"><%= uv.venue != nil ? uv.venue.website : "" %></a></td>
-			        				<td class="button"><%= link_to "Events", venue_path(uv.venue.id), :class => "eventsButton"%></td>
+			        				<td class="button"><%= link_to "Events", venue_path(uv.venue.id), :class => "eventsButtonV"%></td>
 										<td><%= button_to "Remove", user_venue_path(uv.id), method: :delete , :class=> "removeButton" %></td><!-- overrides button default "post" method to "delete"-->
 			        	</tr>
 				        <% end %>

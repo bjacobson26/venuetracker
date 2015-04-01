@@ -1,14 +1,26 @@
   <%= render 'nav' %>
+  <br>
+  <br>
+  <br>
+  <br>
   <div class="container">
   <%= render 'yourVenues' %>
-  
 
-  <div id="EventsTable">
+    <div id="searchbar" class="ui-widget">
+      <%= form_tag events_path, :method => :get do %>
+          <%= text_field_tag :search, params[:search], :id=>"events" %>
+          <%= submit_tag "Search", :name => nil, :id=>"searchbutton" %>
+      <% end %>
+    </div>
+
+
+
+    <div id="EventsTable">
 		<h1 class="titles">Los Angeles Concerts</h1>
 		<table class="table" data-cache="false" data-height="299">
 		    <thead>
 		        <tr>
-		            <th data-field="name">Name</th>
+		            <th data-field="name">Concert</th>
 		            <th data-field="date">Date</th>
 		            <th data-field="website">Buy Tickets</th>
 		        </tr>
@@ -17,7 +29,7 @@
 		        	<tr><td><%= ev.name != nil ? ev.name : "" %></td>
 		        	<td><%= ev.date != nil ? ev.date : "" %></td>
 		        		
-		        		<td><a href="<%= ev.uri %>" target="_blank">Buy tickets!</a></td>
+		        		<td><a  class="buytix" href="<%= ev.uri %>" target="_blank">Buy tickets!</a></td>
 		        	</tr>
 			        <% end %>
 		    </thead>

@@ -58,38 +58,18 @@ margin-top: 2%;
 
 
 
-a.eventsButton {
-	display: block;
-border: 2px solid #F80046;
-text-align: center;
-width: 60px;
-height: 24px;
-padding-bottom: 2px;
-background-color: black;
-border-radius: 3px;
-margin-left: 12px;
-margin-top: 5px;
-}
-a.eventsButton:hover {
-border: 2px solid white;
-background-color: #F80046;
-text-decoration:none;
-color:white;
 
-}
 
 input.removeButton {
 	display: block;
-	height:25px;
+	height:100%;
 	text-align:center;
-	width:66px;
+	width:100%;
 background-color: transparent;
 color: white;
 border-radius: 3px;
 border-color: #F80046;
-margin-left: 17px;
-margin-top: 4px;
-margin-right: 17px;
+margin-top:3px;
 }
 
 input.removeButton:hover {

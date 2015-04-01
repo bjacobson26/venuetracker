@@ -6,6 +6,7 @@ $mainfont: 'Abel', sans-serif;
 body {
 
 	background-image: url('downtownLA.jpg');
+  background-attachment: fixed;
  .container {
  background-color: rgba(0, 0, 0, 0.58);
  padding-top:20px;
@@ -27,43 +28,17 @@ color:white;
 border: 2px solid #F80046;
 background-color: black;
 color: #F80046;
-margin-top: -9px;
 border-radius: 7px;
 display: block;
+  margin-top: -6%;
 }
 .addFavs:hover {
 border: 2px solid white;
 background-color: #F80046;
 color: white;
-margin-top: -9px;
 border-radius: 7px;
 display: block;
-}
-a.eventsButtonV {
-	display: block;
-margin-top: 7px;
-border: 2px solid #F80046;
-text-align: center;
-width: 60px;
-height: 24px;
-padding-bottom: 2px;
-background-color: black;
-border-radius: 3px;
-margin-left: -4%;
-}
-a.eventsButtonV:hover {
-	display: block;
-margin-top: 7px;
-border: 2px solid white;
-text-align: center;
-width: 60px;
-height: 24px;
-padding-bottom: 2px;
-background-color: #F80046;
-text-decoration:none;
-color:white;
-border-radius:3px;
-margin-left: -4%;
+  margin-top: -6%;
 }
 
 
