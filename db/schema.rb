@@ -57,8 +57,18 @@ ActiveRecord::Schema.define(version: 20150219010935) do
   end
 
   create_table "venues", force: true do |t|
-    t.st
-    
+    t.string   "name"
+    t.string   "city"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "picture"
+    t.string   "website"
+    t.integer  "ext_id"
   end
 
 end

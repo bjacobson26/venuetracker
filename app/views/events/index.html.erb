@@ -27,7 +27,7 @@
 		        	
 		        	<% @events.each do |ev| %>
 		        	<tr><td><%= ev.name != nil ? ev.name : "" %></td>
-		        	<td><%= ev.date != nil ? ev.date : "" %></td>
+		        	<td><%= ev.date != nil ? ev.date.strftime("%A, %b %d") : "" %></td>
 		        		
 		        		<td><a  class="buytix" href="<%= ev.uri %>" target="_blank">Buy tickets!</a></td>
 		        	</tr>
